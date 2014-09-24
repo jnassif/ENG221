@@ -1,2 +1,22 @@
 http://www-connex.lip6.fr/~denoyer/wikihomepage/uploads/TechnosWeb/Cours2.pdf
 http://dl.orchestranetworks.com/sita/SOA/ON-guideSOA-2005-02-23-part1.pdf
+
+Tache accomplie :
+
+-Installation ( Eclipse - AVD ( Andriod virtual device ) - Andriod SDK ) : Download from the internet 
+-Research how : 
+    -Create an Android Project on Eclipse.
+    -Naming convention : All android project should start by 'com.' , Activity : Is an interface where we can take an action
+    -
+
+the UI - How files are related ()
+-Analysis + Database Design 
+-Creation of database tables 
+-Main menu layout + navigation 
+-Definition of Client : Layout - Insert - Update - Delete
+-Definition of Product: Layout - Insert - Update - Delete
+-Definition of Warehouse :  Layout - Insert - Update - Delete
+-Generation of Orders: Layout - Insert - Update - Delete 
+-Generation of Delivery: Layout - Insert - Update - Delete
+-Generation of Invoices: Layout - Insert - Update - Delete
+-Statment of account for a client: Layout ( readonly )
