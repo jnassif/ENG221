@@ -9,7 +9,7 @@ Tache accomplie :
     -Naming convention : All android project should start by 'com.' , Activity : Is an interface where we can take an action
     -
 
-the UI - How files are related ()
+-the UI - How files are related ()
 -Analysis + Database Design 
 -Creation of database tables 
 -Main menu layout + navigation 
@@ -19,4 +19,11 @@ the UI - How files are related ()
 -Generation of Orders: Layout - Insert - Update - Delete 
 -Generation of Delivery: Layout - Insert - Update - Delete
 -Generation of Invoices: Layout - Insert - Update - Delete
--Statment of account for a client: Layout ( readonly )
+-Stock Card for a product: Layout ( readonly )
+
+
+
+Qu’est ce qu’un Service (au sens SOA) ?
+
+http://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CDoQFjAB&url=http%3A%2F%2Fdeptinfo.unice.fr%2F~baude%2FWS%2Fcours_SOA_AO%2BFB.ppt&ei=HlkpVOTvO5Dg7QbEvYCYBw&usg=AFQjCNEIxaH1SyZ4dlUXb8_mzZWEQEWTTA&bvm=bv.76247554,d.d2s&cad=rja
+http://www.comp.nus.edu.sg/~seer/book/2e/Ch10.%20Service%20Oriented%20Architecture.pdf
