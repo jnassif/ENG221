@@ -21,6 +21,49 @@ Tache accomplie :
 -Generation of Invoices: Layout - Insert - Update - Delete
 -Stock Card for a product: Layout ( readonly )
 
+    Les notions fondamentales :
+
+    Le modèle consommateur-fournisseur en SOA;
+
+    La formulation des principes et patterns;
+
+    Les bases SOA de l’architecture d’entreprise;
+
+    Les formalismes de modélisation employés pour SOA.
+
+    Les principes d’architecture SOA :
+
+    Contrats et gouvernance;
+
+    Découplage;
+
+    Abstraction agnostique;
+
+    Réutilisation;
+
+    Autonomie intrinsèque;
+
+    Temporalité du service;
+
+    Visibilité du service;
+
+	
+
+    Composantisation.
+
+    Les modèles de référence SOA :
+
+    Le modèle OASIS;
+
+    L’architecture de référence d’Open Group.
+
+    Gouvernance SOA:
+
+    Charte de gouvernance SOA;
+
+    Processus et organisation de la gouvernance;
+
+    Encapsulation des termes de gouvernance.
 
 
 Qu’est ce qu’un Service (au sens SOA) ?
