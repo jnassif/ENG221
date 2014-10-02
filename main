@@ -30,3 +30,77 @@ http://www.comp.nus.edu.sg/~seer/book/2e/Ch10.%20Service%20Oriented%20Architectu
 
 
 http://www.academia.edu/5995272/cours_architecture_orientee_services_SOA
+
+
+
+manifestation:
+
+Une première manifestation se situe au niveau des données et de leur sémantique, le problème de base est que les schémas
+des bases de données sont créés dans le cadre
+de systèmes donnés, à un temps donné, indépendamment l'une de l'autre.
+
+Dans la figure ci-haut, trois systèmes créés à trois temps différents ont un schéma BD qui diffère d'une façon ou d'une autre pour un même domaine d'application.
+On peut alors remarquer que différents systèmes d'un même domaine d'application [ABRA2üü4] traitent parfois des données semblables, similaires, parentes ou complémentaires en utilisant des schémas de données précis et donc différents
+les uns des autres.
+
+
+Donc, les manifestations de difficultés d'intégration et de réutilisation qu'on peut attribuer aux utilisations différentes que font les applications des données d'un même domaine d'application sont grandement accentuées par le fait qu'il existe des différences entre les schémas. C'est-à-dire qu'en plus des utilisations différentes que font les systèmes des données d'un domaine, ces mêmes données diffèrent littéralement d'un système à l'autre (de façon générale), soient par le biais d'anomalies, ou pour toutes autres raisons.
+
+L'architecture orientée-service tente d'apporter des notions théoriques à l'intégration de systèmes dans le but de régir ce domaine pour en améliorer les activités, et surtout la qualité des résultats. Voici tout d'abord les aspects distinctifs de l'AOS, puis certaines de ses limites. Il existe maintes définitions fort intéressantes mais différentes de l'AOS. Ici, une définition proprement dite, n'est donc pas proposée. Plutôt, voici les aspects distinctifs de l'AOS retenues à titre de description théorique.
+2.1 Aspects distinctifs de l'AOS
+2.1.1 Forte cohérence interne
+L'architecture orientée-service se distingue, du modèle RPC par exemple [NATI2003-A], par une plus grande emphase sur la cohésion interne de chacun des services. Un service basé sur l'architecture orientée-service, doit être implémenté pour un client immédiat avec l'optique que d'autres clients, inconnus au départ, devront aussi utiliser ce service. La cohésion interne doit être très forte pour maintenir la "structure" [NATI2003-A] fonctionnelle du service à travers le temps. Il est donc très important d'analyser le but et le besoin fonctionnel exact auquel le service doit répondre. On comprend donc que l'architecture orientée-service est à un niveau d'abstraction plus élevé que des teclmiques d'intégration de bas niveau comme le modèle RPC par exemple.
+20
+2.1.2 Couplage externe faible
+Le couplage entre le consommateur (le composant qui consomme le service) et le producteur (le service) doit être limité à un interface de consommation, le plus général et le plus paramétrable possible dans le but de réduire au maximum le couplage entre le service et son consommateur. Si l'interface est fortement couplée, le consommateur qui l'utilisera, d'une façon ou d'une autre, sera tout aussi fortement couplé au service par le fait même, d'où le lien entre couplage/découplage et les notions de séparation d'interfaces et d'implantation. La notion de surcharge (principe de reprendre la signature d'une fonction pour différents paramètres d'entrées) peut être utilisée pour modifier un service lorsque de nouveaux paramètres d'entrée et de sortie sont ajoutés. Si l'analyse de départ est assez précise et élaborée, une seule interface devrait suffire à couvrir tous les besoins des consommateurs au cours du cycle de vie du service. Il est à noter que certaines technologies AOS limitent, à prime à bord, la surcharge des services [BOOT2üü4], [NATI2003-A].
+2.1.3 Modularité
+La notion de modularité dépasse les bornes de l'architecture orientée service. Par contre on peut noter que les distinctions propres à cette notion au niveau de
+l'architecture orientée service s'expriment par une tendance à modulariser les fonctionnalités en un ou des service(s).
+2.1.4 Service abstrait versus agent concret
+L'architecture orientée-service tend à séparer les fonctionnalités abstraites d'un service quelconque de l'implantation concrète par la description de l'interface. Or, une technologie basée sur l'architecture orientée service offre normalement une solution afin d'identifier, de façon abstraite, l'interface d'un service autre que par l'implantation
+21
+elle-même des services [MURP2üü4].
+2.1.5 Notion de centres dans un processus plus large
+Le service encapsule des fonctionnalités qui représentent des centres de valeurs pour une organisation. Dans un processus plus large, ces centres de valeurs peuvent devenir des noeuds dans un processus, dans un flux. C'est-à-dire qu'il est possible de chorégraphier les services afin d'utiliser les divers centres de valeurs d'une entreprise afin d'élaborer des applications [ALEX 1996], [MURP2üü4].
+2.1.6 Réutilisation du service
+La réutilisation des fonctionnalités est un des buts principaux de l'AOS. Par contre, ce n'est pas l'AOS qui a amené ce besoin, cette idée. C'est donc une caractéristique héritée d'autres courants antérieurs du génie logiciel [NATI2DD3-A].
+2.1.7 Notion de description d'un service (ou contrat)
+La description de l'interface d'un service est à la base de l'AOS. Le contrat est ainsi
+"
+défini entre le consommateur et le producteur de service. Cette description comprend les notions d'adressage, de nom de fonction, de structures de données en entrée et en sortie, et d'autres détails servant à découpler les détails d'implantation [CHAV2ÜÜ4].
+2.1.8 Généralisation et ré-utilisation
+Le but principal de la mise en place d'un service (composante logicielle implémentant une fonction d'affaire cohérente de façon à maximiser sa réutilisation et à diminuer au maximum le couplage entre le client et le service) est de permettre d'atteindre une
+22
+certaine généralisation suffisante à la réutilisation du service par plus d'un client potentiel, d'où le bas couplage externe, la forte cohérence interne et finalement, la modularité [NATI2DD3-A].
+2.1.9 Découvertabilité (...qui est découvrable...)
+Il s'agit d'un aspect distinctif apporté par la technologie UDDI (Universal Description Discovery and Integration) et principalement utilisé dans le cadre des services web. Il s'agit d'une base et d'un service de découvertabilité qui répertorie l'ensel1}ble des services disponible sur un réseau. Cet aspect distinctif est discutable, mais à cause de la portée du UDDI dans les services web, il est noté ici.
+Interact
+,
+4.
+1-__••_. _
+~
+Figure 8 : Notion de découvertabilité d'un service (diagramme du w3c, www.w3.org)
+23
+2.2 Limites
+2.2.1 Impact d'une panne d'un service
+La notion de fournisseur de service dans n'importe quel domaine vient inévitablement avec un certain niveau de responsabilité contractuel à livrer aux consommateurs. C'est le même phénomène dans un environnement orientée-service. C'est donc dire qu'un service (producteur), qui livre un produit informatique à des consommateurs, a une responsabilité plu~ grande et plus visible dans l'entreprise qu'une série de fonctions quasi-identiques retrouvées à l'intérieur de différents systèmes [NATI2003-A]. Cette responsabilité est donc exprimée par un besoin plus important au niveau de la stabilité de l'environnement d'exécution d\m service par rapport à un système moyen (niveau d'importance moyen dans l'entreprise) ne fournissant pas de service à d'autres systèmes.
+Il faut donc prévoir, même pour un environnement uniquement intranet, un plus grand niveau de criticalité lors de la mise en place d'un environnement d'exécution pour un système orientée-service.
+2.2.2 Notion de sécu rité
+La dimension sécurité des fonctions implémentées en service selon l'architecture orientée-service, est amplifiée par les multiples accès possibles et, surtout, par la conception d'ouverture aux requêtes dans un réseau qui est propre aux systèmes distribués. Par "conception d'ouverture aux requêtes dans un réseau", il est entendu que si un service peut être accédé par un consommateur, c'est par le réseau dans la grande majorité des cas. De plus, les méthodes d'accès au réseau sont standardisées ce
+24
+qui rend donc la reproduction d'un appel d'autant plus facile. La notion de sécurité devient donc un enjeu des plus importants lorsque l'on parle d'architecture orientéeservice. C'est peut-être selon l'orientation technologique que la dimension de sécurité de l'AOS s'ajuste ([COTR2üü4]).
+Prenons par exemple, certains hôpitaux québécois qui utilisent des technologies orientées-service afin de maintenir et distribuer les données ayant trait aux dossiers patients. Il est de toute évidence légalement interdit de permettre la divulgation au grand public de ce genre de données par un hôpital. Il faut donc s'assurer que malgré le fait que les méthodes d'accès aux services soient standardisées et donc facilement reproductibles, les couches de sécurité, elles aussi standardisées, parviennent à neutraliser les accès indésirables. Comme telles, les notions de base de l'architecture orientée-service ne dictent pas de méthodes de sécurité des services. Plutôt, il est remarqué que certains standards naissent des besoins exprimés par l'architecture orientée-service tels les services web du W3C. Par contre l'AOS, lui-même, a été utilisé pour définir des stratégies de sécurité comme il est mentionné et expliqué dans la référence [IMAM2üü5]. On y voit qu'IBM a utilisé des notions de l'AOS afin d'élaborer sur le sujet. Dans le même ordre d'idées, d'autres besoins plus spécifiques à de tels standards donnent naissance à l'adaptation ou carrément à la mise sur pied de nouveaux standards ou protocoles. D'ailleurs, au sujet des services web, on pourrait noter la réutilisation/adaptation des protocoles de sécurité de la couche de transport (ex: HTTPS ou encore SSL) pour ce qui est de l'encryption des échanges réseaux. Au niveau de l'autorisation et l'authentification, d'autres standards/protocoles tels LDAP sont utilisés pour gérer les accès.
+25
+2.2.3 Niveau ou degré d'ouverture technologique
+L'architecture orientée-service ne dicte pas le degré d'ouverture technologique en ne dictant pas comment définir des standards d'implémentation de technologies orientées-service tels les services web.
+Il en revient donc aux divers groupes de mise en place de technologies orientéesservice de déterminer le degré d'ouverture technologique des envirOlmements de développement et d'exécution (plate-forme) orientés-service. Par exemple, une technologique telle que IBM MQSeries Integrator [PUTT2000] qui s'appellera plus tard WebSphere Business Integrator tendra, avec son propre cycle de vie, à améliorer son degré d'ouverture technologique. En 1999-2000, IBM MQSeries Integrator (MQSI) n'est que très peu ouverte (accès aux bases dOlmées relationnelles en C, accès aux bases données relationnelles en utilisant un. script de développement propriétaire, etc.), malgré une bonne fondation (échange de données interne supportant le XML). Plus tard (2003-2004), cette technologie tendra plutôt vers l'ouverture technologique (Services Web, JDBC, JMS, XML, etc.) afin de permettre une plus grande facilité d'intégration entre les consommateurs et producteurs de services.
+La plateforme des services web du W3C [BOOT2004], lorsque implémentée dans un environnement d'exécution tel un serveur J2EE [WHAL2006], a pour but l'ouverture technologique en propageant l'idée que le standard proposé par le W3C est une
+technologie d'ouverture entre des environnements hétérogènes, ce qui s'avérera vrai.
+Ce qui est certain c'est que plus le degré d'ouverture technologique est grand, plus le
+principe de généralisation et de réutilisation, propre à l'architecture orientée-service,
+est grand.
+26
+2.2.4 Limites de l'infrastructure technologique choisie
+Toutes technologies a ses limites. Or, dans le domaine de l'architecture orientéeservice, les implémentations d'environnement de développement et d'exécution sont bornées par différentes limites telles la performance, le niveau de robustesse, la fiabilité, les outils de sécurité, le degré d'ouverture technologique, etc.
+
+
