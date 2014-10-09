@@ -7,19 +7,52 @@ Tache accomplie :
 -Research how : 
     -Create an Android Project on Eclipse.
     -Naming convention : All android project should start by 'com.' , Activity : Is an interface where we can take an action
-    -
 
 -the UI - How files are related ()
 -Analysis + Database Design 
--Creation of database tables 
+-Creation of database tables ( SMB215-INVENTORY / com.inventory / src / com / example / com / inventory / DatabaseHandler.java
+13 -> 109 )
 -Main menu layout + navigation 
--Definition of Client : Layout - Insert - Update - Delete
--Definition of Product: Layout - Insert - Update - Delete
+( SMB215-INVENTORY / com.inventory / res / layout / activity_main.xml
+
+1 ->143
+
+ SMB215-INVENTORY / com.inventory / src / com / example / com / inventory / MainActivity.java
+
+1 -> 151
+)
+-Definition of Client :
+	Layout( SMB215-INVENTORY / com.inventory / res / layout / client_activity.xml
+ 1 -> 39)
+	Insert : ( SMB215-INVENTORY / com.inventory / res / layout / add_update_client.xml)
+
+	Update ( SMB215-INVENTORY / com.inventory / res / layout / add_update_client.xml
+)
+	Delete( SMB215-INVENTORY / com.inventory / res / layout / client_activity.xml
+ 1 -> 39
+ 
+  SMB215-INVENTORY / com.inventory / src / com / example / com / inventory / ClientActivity.java
+157 -> 189)
+
+-Definition of Product:
+	Layout
+	Insert
+	Update
+	Delete
 -Definition of Warehouse :  Layout - Insert - Update - Delete
--Generation of Orders: Layout - Insert - Update - Delete 
--Generation of Delivery: Layout - Insert - Update - Delete
--Generation of Invoices: Layout - Insert - Update - Delete
+-Generation of Sales Orders: Layout - Insert - Update - Delete 
+-Generation of Sales Delivery: Layout - Insert - Update - Delete
+-Generation of Sales Invoices: Layout - Insert - Update - Delete
+
+-Generation of Purchase Orders: Layout - Insert - Update - Delete 
+-Generation of Purchase Purchase Delivery: Layout - Insert - Update - Delete
+-Generation of Purchase Invoices: Layout - Insert - Update - Delete
+
+
 -Stock Card for a product: Layout ( readonly )
+
+
+
 
     Les notions fondamentales :
 
